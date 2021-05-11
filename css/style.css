@@ -1,0 +1,550 @@
+/*
+Author: Javed Ur Rehman
+Website: http://www.allphptricks.com/
+*/
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+.clearfix:before, .clearfix:after {
+    content: ""; display: table; 
+}
+.clearfix:after { 
+    clear: both; 
+}
+a {
+    color:#0067ab; text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}
+.form{
+    width: 300px; margin: 0 auto;
+}
+input[type='text'], input[type='email'], input[type='password'] {
+    width: 200px;
+    border-radius: 2px;
+    border: 1px solid #CCC; 
+    padding: 10px; 
+    color: #333; 
+    font-size: 14px; 
+    margin-top: 10px;
+}
+
+input[type='submit']
+{
+    padding: 10px 25px 8px; 
+    width: auto;
+    min-width: 250px;
+    height: 50px; 
+    color: #fff; background-color: #0067ab; text-shadow: rgba(0,0,0,0.24) 0 1px 0; font-size: 16px; box-shadow: rgba(255,255,255,0.24) 0 2px 0 0 inset,#fff 0 1px 0 0; border: 1px solid #0164a5; border-radius: 10px; margin-top: 10px; cursor:pointer;}
+input[type='submit']:hover {background-color: #024978;}
+
+
+
+
+
+
+
+element.style {
+    background: url(/images/paysystems/qiwi.png) no-repeat;
+}
+.payment-types-icons i.inactive, .payment-types-icons span.inactive {
+    opacity: .3;
+	border: 1px solid #3490d7;
+	border-radius: 5px;
+}
+.payment-types-icons i {
+    position: relative; 
+    z-index: 2; 
+    display: block;
+    width: 320px;
+    padding: auto;
+    margin: 1px;
+    height: 100px;
+    cursor: pointer;
+    -webkit-transition: .4s;
+    transition: .4s;
+    opacity: .5;
+    background-position: center!important;
+    margin-bottom: 1px;
+}
+@media screen and (min-width:200px) and (max-width:486px) {
+    .linkpayment {
+       font-size: 12px; 
+    }
+    .payment-types-icons i {
+       max-width:90px; 
+    }
+    .payment-types-title{
+        font-size: 16px;
+    }
+    
+    .greypolosa{
+        height: 80px;
+    }
+    #menudesk li {
+        display: block;
+    }
+    #menudesk {
+    float: left;
+    }
+    .namedeskup{
+       min-height: 200px; 
+    }
+    .paymentnalichie {
+        margin-top: 14px;
+        display: none;
+    }
+}
+@media screen and (min-width:486px) and (max-width:796px) {
+    .linkpayment {
+       font-size: 13px; 
+    }
+    .payment-types-icons i {
+       max-width:150px; 
+    }
+    .payment-types-title{
+        font-size: 20px;
+    }
+    .greypolosa{
+        height: 68px;
+    }
+    #menudesk li {
+        display: inline-block;
+    }
+    #menudesk {
+    float: left;
+    }
+    .namedeskup{
+       min-height: 150px; 
+    }
+    .paymentnalichie {
+        margin-top: auto;
+    }
+}
+@media screen and (min-width:780px) and (max-width:850px) {
+        .linkpayment {
+       font-size: 13px; 
+    }
+    .payment-types-icons i {
+       max-width:200px; 
+    }
+    .payment-types-title{
+        font-size: 20px;
+    }
+    .greypolosa{
+        height: 60px;
+    }
+    #menudesk li {
+        display: inline-block;
+    }
+    #menudesk {
+    float: right;
+    }
+    .namedeskup{
+       min-height: 100px; 
+    }
+    .paymentnalichie {
+        margin-top: auto;
+    }
+    
+}
+
+@media screen and (min-width:850px) and (max-width:1000px) {
+    .linkpayment {
+       font-size: 13px; 
+    }
+    .payment-types-icons i {
+       max-width:260px; 
+    }
+    .payment-types-title{
+        font-size: 26px;
+    }
+    .greypolosa{
+        height: 60px;
+    }
+    #menudesk li {
+        display: inline-block;
+    }
+    #menudesk {
+    float: right;
+    }
+    .namedeskup{
+       min-height: 100px; 
+    }
+    .paymentnalichie {
+        margin-top: auto;
+    }
+}
+@media screen and (min-width:1000px)  {
+    .linkpayment {
+       font-size: 13px; 
+    }
+    .payment-types-icons i {
+       max-width:260px; 
+    }
+    .payment-types-title{
+        font-size: 26px;
+    }
+    .greypolosa{
+        height: 60px;
+    }
+    #menudesk li {
+        display: inline-block;
+    }
+    #menudesk {
+    float: right;
+    }
+    .namedeskup{
+       min-height: 100px; 
+    }
+    .paymentnalichie {
+        margin-top: auto;
+    }
+}
+* {
+    outline: 0;
+}
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+html {
+    font-family: 'Proxima Nova Semibold';
+    background-color: #efeff0;
+}
+.payment-types-icons i.active, .payment-types-icons span.active {
+    opacity: 1!important;
+    border-bottom: 1px solid #3490d7;
+	border: 1px solid #3490d7;
+	border-radius: 5px;
+    margin-bottom: 0;
+}
+.payment-types {
+    max-width: 1004px;
+    background: white;
+	margin: auto;
+}
+
+
+div {
+    display: block;
+}
+
+.payment-types-icons-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1004px;
+    margin-bottom: 30px;
+	margin: 0px;
+
+}
+.payment-types-icons label {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 5px;
+    display: none;
+    box-sizing: border-box;
+    max-width: 220px;
+    padding: 10px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-align: left;
+    opacity: 0;
+    color: #434343;
+    background: #fff;
+    box-shadow: 1px 1px 3px 1px rgba(187,187,187,.66);
+}
+.payment-types-icons i:hover+label {
+    z-index: 4;
+    opacity: 1;
+    display: block;
+}
+.payment-types-icons-container {
+    position: relative;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.payment-types-title {
+	float: left;
+    padding: 5px 25px;
+}
+.payment {
+
+    max-width: 1024px ;
+	height: 240px;
+    margin: auto;
+    background: #fff;
+
+	
+}
+.wrap {
+    position: block;
+    width: auto;
+    max-width: 1024px;
+	background: white;
+    margin: auto;
+	min-height: 800px;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+    border-radius: 10px;
+}
+
+
+
+.payment-types-icons i.active, .payment-types-icons span.active {
+    opacity: 1!important;
+    border-bottom: 1px solid #3490d7;
+    margin-bottom: 0;
+}
+.payment-panel-main{
+    position: block;
+	margin: 0px;
+	text-align: center;
+	max-width: 1004px;
+	
+}
+.emaildesc{
+	margin: 10px;
+	
+}
+.namedeskup{
+	background: white;
+    max-width: 1024px;
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	border-radius: 20px 20px 0px 0px;
+    border-bottom: 1px solid #ecf1f5;  
+}
+.namedeskupdown2{
+	background: white;
+	max-width: 1024px;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+.paymentnalichie {
+    background-color: #0067ab;
+    border: 5px solid #0084db;
+    border-radius: 30px;
+	text-align: center;
+    padding: 00px 30px 0px 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+	width: 100px;
+	height: 50px;
+	float: right;
+	position: relative;
+}
+.paymentkupit {
+    margin: 10px 0px 0px 30px;
+	padding: 3px 0px 0px 0px;
+ position: relative;
+	color: #0067ab;
+}
+.koplate {
+    margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+ position: relative;
+	color: white;
+	text-align: center;
+    font-size: 26px;
+	font-weight: 600;
+	top: -16px;
+
+}
+
+.greypolosa {
+	margin: 10px;
+	padding: 0px;
+	background: rgb(250, 250, 250);
+	max-width: 1004px ; 
+    float: center; 	
+	display: block;
+	 	
+}
+.bluepolosa {
+	margin: 18px;
+	padding: 0px;
+	background: #0067ab;
+	border-radius: 10px;
+	border: 1px solid #0067ab;
+	max-width: 990px ; 
+    float: center; 	
+	height: 50px;
+	display: block;
+	 	
+}
+.emaildesc{
+	COLOR: #8c8b90;
+}
+.payment-check{
+	max-width: 700px;
+	border: 2px dashed #2cb7ff;
+    border-radius: 10px;
+	text-align: center;
+    margin: auto;
+}
+#menudesk {
+	font-size: 13px;
+  list-style: none;
+  margin: auto;
+  padding-left: 0; 
+  text-decoration: none;
+word-spacing: 1 px;
+padding: 27px 15px;
+
+}
+#menudesk li {
+    
+	text-decoration: none;
+font-weight: 600;
+margin: 10px;
+
+}
+#menudesk:hover {
+    text-decoration: none;
+   }
+#menudesk li :hover {
+    text-decoration: none;
+   }
+.authmaildesk {
+    COLOR: #8c8b90;
+    max-width: 700px;
+	border: 2px dashed #2cb7ff;
+    border-radius: 10px;
+	text-align: center;
+    margin-top: 20px;
+    margin: auto; 
+    padding: 5px;
+
+}
+.authmail-panel-main{
+    position: block;
+	padding: auto;
+    padding-top: 18px;
+	text-align: center;
+	max-width: 1004px;
+}
+.table{
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.table tr {
+    border-bottom: 1px dashed #e5e5e5;
+    height: 63px;
+    max-height: 64px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(229, 229, 229);
+    border-radius: 5px;
+    background-color: rgb(250, 250, 250);
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+.table tr {
+    font-size: 13px;
+    color: #76757c;
+}
+.table tr td {
+    width: auto;
+}
+.oplatatovar{
+    COLOR: #8c8b90;
+    font-size: 16px;
+	border: 2px dashed #2cb7ff;
+    border-radius: 10px;
+	text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    max-width: 350px;
+    padding: 10px;  
+    margin-bottom: 0px;
+}
+.oplataHight{
+    font-size: 18px;
+    COLOR: #2cb7ff;
+}
+input[type='submitpok'] {
+    text-align: center;
+    padding: 10px 25px 8px;
+    width: 400px;
+    height: 50px;
+    color: #fff;
+    background-color: #0067ab;
+    text-shadow: rgba(0,0,0,0.24) 0 1px 0;
+    font-size: 16px;
+    box-shadow: rgba(255,255,255,0.24) 0 2px 0 0 inset, #fff 0 1px 0 0;
+    border: 1px solid #0164a5;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type='submitpok']:hover 
+{
+    background-color: #024978;
+}
+input[type='submitsmal'] {
+    text-align: center;
+    padding: 10px 25px 8px;
+    width: 300px;
+    height: 20px;
+    color: #fff;
+    background-color: #0067ab;
+    text-shadow: rgba(0,0,0,0.24) 0 1px 0;
+    font-size: 13px;
+    box-shadow: rgba(255,255,255,0.24) 0 2px 0 0 inset, #fff 0 1px 0 0;
+    border: 1px solid #0164a5;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type='submitsmal']:hover 
+{
+    background-color: #024978;
+}
+.zakazop{
+	COLOR: #8c8b90;
+	text-align: center;
+    font-size: 16px;
+	font-weight: 600;
+	top: -16px;
+}
+.imgload{
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logopay{
+    top: 25px;
+    left: -5px;
+    position: relative;
+}
+.linkpayment{
+    left: 50px;
+    position: relative;
+}
+.logoprice{
+    top: 5px;
+    right: 10px;
+    position: relative;
+}
